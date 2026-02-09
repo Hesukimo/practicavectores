@@ -2,13 +2,29 @@ using UnityEngine;
 
 public class Vector3D : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float x { get; private set; }
+    public float y { get; private set; }
+    public float z { get; private set; }
+
+    Vector3D()
+    {
+        x = 0;
+        y = 0;
+        z = 0;
+    }
+
+    Vector3D(float x, float y, float z)
+    {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
